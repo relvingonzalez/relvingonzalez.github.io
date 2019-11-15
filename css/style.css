@@ -66,10 +66,13 @@
 h1,h2,h3,h4,h5,h6,ul,li,a,p{ margin:0px; padding:0px;}
 a,a:hover{ text-decoration:none;}
 li{ list-style:none;}
-.row{ margin:0px;}
+.row{ 
+    margin: 0px;
+    justify-content: center;
+}
 body{ font-size:14px; color:#333333; margin:0px; padding:0px;font-family:'Century Gothic-regular';}
 :hover{transition:all 1s ease 0s;-webkit-transition:all 1s ease 0s;-moz-transition:all 1s ease 0s;}
-img{ max-width:100%;}
+img, video,object  { max-width:100%;}
 .container{ max-width:1200px;}
 
 
@@ -200,6 +203,7 @@ a.see-more:hover {background: rgba(255,255,255,.5);}
 .our_team p {color: #8b94aa;text-align: center;max-width:650px;margin: 30px auto;font-size: 13px;line-height: 24px;}
 .our_team .col-md-4 {text-align: center;    cursor: pointer;}
 .our_team .col-md-4 h3{ font-size:22px; color:#000;font-family:'Century Gothic-bold'; margin-top:30px;}
+.our_team .col-md-4 h3 span {font-size: 16px; font-style: normal; font-weight: 400;}
 .our_team .col-md-4 p{ margin-top:5px; font-size:16px;} 
 .our_work_portfolio {float: left;width: 100%;padding: 20px 0px 100px;}
 .our_work_portfolio h2 {    text-align: center;    font-size: 48px;}
@@ -305,23 +309,6 @@ li.search_section input {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media only screen and (max-width :767px) {
 	
 .submit_button label{ display:none;}
@@ -406,8 +393,6 @@ font-size: 18px;}
 .ondek_section h4{ font-size:19px;}
 }
 
-
-
 .arrow a:before {content: none;}
 .fancy_box_gallery .col-md-4{ margin:0px;}
 /*lightbox gallery*/
@@ -437,8 +422,6 @@ a.fa.fa-arrow-down.fa-2x {color: white;text-decoration: none;}
   40% {-webkit-transform: translateY(-30px);transform: translateY(-30px);}
   60% {-webkit-transform: translateY(-15px);transform: translateY(-15px);}
 }
-
-
 
 /*****scrol top css******/
 /* -------------------------------- 
@@ -515,3 +498,15 @@ Main components
 }
 
 .top-buffer { margin-top:20px; }
+
+a.custom-link, 
+a.custom-link:hover, 
+a.custom-link:focus, 
+a.custom-link:active {
+    outline: none;
+    text-decoration: none;
+}
+
+.picture-flex-container img {
+    width: 100%;
+}
