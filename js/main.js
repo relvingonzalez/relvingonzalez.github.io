@@ -16,6 +16,9 @@ jQuery(document).ready(function($){
 		}
 	});
 
+	const p = document.getElementById('copyright');
+	p.textContent = `Copyright ${new Date().getFullYear()}, Otsan. All Rights Reserved`
+
 	//smooth scroll to top
 	$back_to_top.on('click', function(event){
 		event.preventDefault();
