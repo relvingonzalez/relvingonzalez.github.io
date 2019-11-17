@@ -36,7 +36,7 @@
                     'images/map-image.png',
                     'images/noteicon.png',
                     'images/Otsan presen2t.jpg',
-                    'images/p2.jpg',
+                    'images/p2.webp',
                     'images/pencilicon.png',
                     'images/penicon.png',
                     'images/phoneicon.png',
