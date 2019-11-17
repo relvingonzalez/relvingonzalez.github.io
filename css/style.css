@@ -1,3 +1,7 @@
+@font-face{
+    font-family:FontAwesome;
+    font-display: fallback;
+}
 @font-face {
     font-family:'Raleway-medium';
     src: url('../fonts/Raleway Medium.eot');
