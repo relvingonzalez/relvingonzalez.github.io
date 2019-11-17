@@ -260,7 +260,7 @@ a.see-more:hover {background: rgba(255,255,255,.2);}
 .submit_button { float: left;  width: 100%;  margin-top: 20px;}
 .follow_us h2 {text-align: center;color: #fff;text-transform: uppercase;font-size: 18px;font-family:'Raleway-regular';}
 .follow_us ul {text-align: center;margin: 20px 0px 25px;}
-.copyright_content p {font-family:'Raleway-medium';    color: #fff;text-align: center;opacity: 0.6;font-size: 18px;}
+.copyright_content p {font-family:'Raleway-medium';    color: #fff;text-align: center;font-size: 18px;}
 .follow_us ul li {display: inline-block;}
 .follow_us ul li a {background: #fff;padding: 5px 13px;font-size: 20px;}
 li.search_section {
