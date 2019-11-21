@@ -33,6 +33,7 @@
                     'images/kt_app_backoffice.webp',
                     'images/logo.png',
                     'images/logo_otsan.png',
+                    'images/msbadge.png',
                     'images/map-image.png',
                     'images/noteicon.png',
                     'images/Otsan presen2t.jpg',
