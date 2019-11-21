@@ -6,7 +6,7 @@
 		url('../fonts/Raleway Medium.woff') format('woff'),
 		url('../fonts/Raleway Medium.svg#Raleway Medium') format('svg');
     font-weight: 500;
-    font-display: fallback;
+    font-display: swap;
     font-style: normal;
     font-stretch: normal;
     unicode-range: U+0020-00FE;
@@ -20,7 +20,7 @@
 		url('../fonts/Raleway.woff') format('woff'),
 		url('../fonts/Raleway.svg#Raleway') format('svg');
     font-weight: 400;
-    font-display: fallback;
+    font-display: swap;
     font-style: normal;
     font-stretch: normal;
     unicode-range: U+0020-00FE;
@@ -34,7 +34,7 @@
 		url('../fonts/Century Gothic.woff') format('woff'),
 		url('../fonts/Century Gothic.svg#Century Gothic') format('svg');
     font-weight: 400;
-    font-display: fallback;
+    font-display: swap;
     font-style: normal;
     font-stretch: normal;
     unicode-range: U+0020-2215;
@@ -48,7 +48,7 @@
 		url('../fonts/Montserrat Regular.woff') format('woff'),
 		url('../fonts/Montserrat Regular.svg#Montserrat Regular') format('svg');
     font-weight: 400;
-    font-display: fallback;
+    font-display: swap;
     font-style: normal;
     font-stretch: normal;
     unicode-range: U+0020-00FE;
@@ -61,7 +61,7 @@
 		url('../fonts/Century Gothic Bold.woff') format('woff'),
 		url('../fonts/Century Gothic Bold.svg#Century Gothic Bold') format('svg');
     font-weight: 600;
-    font-display: fallback;
+    font-display: swap;
     font-style: normal;
     font-stretch: normal;
     unicode-range: U+0020-2215;
@@ -92,7 +92,7 @@ img, video,object  { max-width:100%;}
     transition: 0.8s ease;
     transition: all 0.4s ease-in-out 0s;
     padding-bottom:10px; 
-	background: #10b5ee;
+	background: #0A5D7B;
 }
 .fixed {position: fixed;top: 0;left: 0;width: 100%;z-index:999; }
 .logo { padding-top: 20px;}
@@ -122,12 +122,12 @@ li.dropdown.show ul.dropdown-menu {  display: block;   background: #1f1b17;}
 
 /************body css start here *****************/
  p {font-family: 'Montserrat-regular';}
-.hero_banner{ float:left; width:100%; background:#10b5ee; text-align:center; padding: 150px 0px 375px;}
-.footer {float: left;width: 100%;    clear: both;    background: #00b7f6;padding: 50px 0px 35px;}
+.hero_banner{ float:left; width:100%; background:#0A5D7B; text-align:center; padding: 150px 0px 375px;}
+.footer {float: left;width: 100%;    clear: both;    background: #0A5D7B;padding: 50px 0px 35px;}
 .hero_banner h2 { font-size: 98px; color: #fff;}
 .hero_banner p {font-family: 'Montserrat-regular';max-width: 640px;margin: 30px auto;color: #fff;font-size: 18px;line-height: 32px;}
 a.see-more {font-family: 'Montserrat-regular';border: 1px solid #fff;color: #fff;padding: 20px 0px;width:212px;display: block;margin:90px auto 0px;font-size: 24px;}
-a.see-more:hover {background: rgba(255,255,255,.5);}
+a.see-more:hover {background: rgba(255,255,255,.2);}
 .what_we_do {
     float: left;
     width: 100%;
@@ -144,9 +144,9 @@ a.see-more:hover {background: rgba(255,255,255,.5);}
     text-align: center;
     font-size: 48px;
 }
-.inner_container h2:after{ background:#00b7f6; margin:16px auto; width:121px; height:2px; display:block; content:"";}
+.inner_container h2:after{ background:#0A5D7B; margin:16px auto; width:121px; height:2px; display:block; content:"";}
 .inner_container p {
-    color: #8b94aa;
+    color: #525870;
     text-align: center;
     max-width: 730px;
     margin: 30px auto;
@@ -185,8 +185,8 @@ a.see-more:hover {background: rgba(255,255,255,.5);}
     width: 100%;
     padding-top: 60px;
 }
-.our_services h2:after{ background:#00b7f6; margin:16px auto; width:121px; height:2px; display:block; content:"";}
-.our_services p {color: #8b94aa;text-align: center;max-width: 730px;margin: 30px auto;font-size: 13px;line-height: 24px;}
+.our_services h2:after{ background:#0A5D7B; margin:16px auto; width:121px; height:2px; display:block; content:"";}
+.our_services p {color: #525870;text-align: center;max-width: 730px;margin: 30px auto;font-size: 13px;line-height: 24px;}
 
 .service_image {
     float: left;
@@ -205,23 +205,29 @@ a.see-more:hover {background: rgba(255,255,255,.5);}
 .our_services .service_content p{ text-align:left;margin-top: 11px;}
 .our_services .service_content h3 {font-family:'Century Gothic-bold';font-size: 16px;color: #000;text-transform: uppercase;}
 .our_team {float: left;width: 100%;padding: 20px 0px 150px;}
+.team-image-container {
+    position: relative;
+    margin-bottom: 64px;
+}
+.team-image-container .badge {position: absolute;}
+.team-image-container .badge.google {left:0; bottom:-60px; width:40%;}
 .our_team h2 {text-align: center;font-size: 48px;}
-.our_team h2:after{ background:#00b7f6; margin:16px auto; width:121px; height:2px; display:block; content:"";}
-.our_team p {color: #8b94aa;text-align: center;max-width:650px;margin: 30px auto;font-size: 13px;line-height: 24px;}
+.our_team h2:after{ background:#0A5D7B; margin:16px auto; width:121px; height:2px; display:block; content:"";}
+.our_team p {color: #525870;text-align: center;max-width:650px;margin: 30px auto;font-size: 13px;line-height: 24px;}
 .our_team .col-md-4 {text-align: center;    cursor: pointer;}
 .our_team .col-md-4 h3{ font-size:22px; color:#000;font-family:'Century Gothic-bold'; margin-top:30px;}
 .our_team .col-md-4 h3 span {font-size: 16px; font-style: normal; font-weight: 400;}
 .our_team .col-md-4 p{ margin-top:5px; font-size:16px;} 
 .our_work_portfolio {float: left;width: 100%;padding: 20px 0px 100px;}
 .our_work_portfolio h2 {    text-align: center;    font-size: 48px;}
-.our_work_portfolio h2:after{ background:#00b7f6; margin:16px auto; width:121px; height:2px; display:block; content:"";}
-.our_work_portfolio p {color: #8b94aa;text-align: center;max-width:650px;margin: 30px auto;font-size: 13px;line-height: 24px;}
+.our_work_portfolio h2:after{ background:#0A5D7B; margin:16px auto; width:121px; height:2px; display:block; content:"";}
+.our_work_portfolio p {color: #525870;text-align: center;max-width:650px;margin: 30px auto;font-size: 13px;line-height: 24px;}
 .our_work_portfolio .col-md-4 {text-align: center; padding: 0px 10px;   cursor: pointer;}
 .our_work_portfolio .col-md-4 h3{ font-size:22px; color:#000;font-family:'Century Gothic-bold'; margin-top:30px;}
 .our_work_portfolio .col-md-4 p{ margin-top:5px;}
 .client_feedback_slides h2 {margin-bottom: 66px;  text-align: center;    font-size: 48px; color:#fff;}
 .client_feedback_slides h2:after{ background:#fff; margin:16px auto; width:121px; height:2px; display:block; content:"";} 
-.client_feedback_slides {    float: left;width: 100%;display: block;background: #10b5ee;padding:120px 0px 85px;}
+.client_feedback_slides {    float: left;width: 100%;display: block;background: #0A5D7B;padding:120px 0px 85px;}
 .crousel_content {text-align: center;margin-bottom: 70px;}
 .crousel_content p {margin-bottom: 60px;color: #fff;font-size: 16px;line-height: 30px;}
 .slider-container {max-width: 930px;margin: 0px auto;}
@@ -232,13 +238,14 @@ a.see-more:hover {background: rgba(255,255,255,.5);}
 .carousel-indicators li::before {position: absolute;top: 0px;left: 0;display: inline-block;width: 100%;height: 18px;content: "";background: none;}
 .carousel-control-next, .carousel-control-prev{ display:none;}
 .contact_us_section h2 {    text-align: center;    font-size: 48px;}
-.contact_us_section h2:after{ background:#00b7f6; margin:16px auto; width:121px; height:2px; display:block; content:"";}
-.contact_us_section p {color: #8b94aa;text-align: center;max-width:650px;margin:15px auto;font-size: 13px;line-height: 24px;}
+.contact_us_section h2:after{ background:#0A5D7B; margin:16px auto; width:121px; height:2px; display:block; content:"";}
+.contact_us_section p {color: #525870;text-align: center;max-width:650px;margin:15px auto;font-size: 13px;line-height: 24px;}
 .contact_us_section { float: left;width: 100%;display: block;padding: 55px 0px;}
 .email_section { float: left;  margin-bottom: 35px;  width: 100%;}
 .email_image {  float: left; width: 23%;}
+.email_image img {width: 64px;}
 .email_content h4{ font-size:18px;font-family:'Century Gothic-bold'; text-transform:uppercase; color:#141414;}
-.email_content {float: left;padding-top: 22px;}
+.email_content {float: left;padding-top: 10px;}
 .email_section {float: left;margin: 40px 0px 0px;width: 100%;}
 .email_content h5 {font-size: 16px;color: #585858;line-height: 24px;margin-top: 7px;}
 .contact_content .col-md-6 h3{ font-size:18px;font-family:'Century Gothic-bold'; text-transform:uppercase; color:#141414;}
@@ -249,11 +256,11 @@ a.see-more:hover {background: rgba(255,255,255,.5);}
 .form_input input {width: 75%;    border: none;border-bottom: 4px solid #cacaca;}
 .form_input textarea {width: 75%;    border: none;border-bottom: 4px solid #cacaca;}
 .submit_button label {width: 90px; font-size:17px; color:#585858;    float: left;}
-.submit_button button {background: #00b7f6;border: none;color: #fff;      cursor: pointer;  width: 215px;padding: 20px 0px;font-size: 18px;text-transform: uppercase;font-family:'Century Gothic-bold'; }
+.submit_button button {background: #0A5D7B;border: none;color: #fff;      cursor: pointer;  width: 215px;padding: 20px 0px;font-size: 18px;text-transform: uppercase;font-family:'Century Gothic-bold'; }
 .submit_button { float: left;  width: 100%;  margin-top: 20px;}
 .follow_us h2 {text-align: center;color: #fff;text-transform: uppercase;font-size: 18px;font-family:'Raleway-regular';}
 .follow_us ul {text-align: center;margin: 20px 0px 25px;}
-.copyright_content p {font-family:'Raleway-medium';    color: #fff;text-align: center;opacity: 0.6;font-size: 18px;}
+.copyright_content p {font-family:'Raleway-medium';    color: #fff;text-align: center;font-size: 18px;}
 .follow_us ul li {display: inline-block;}
 .follow_us ul li a {background: #fff;padding: 5px 13px;font-size: 20px;}
 li.search_section {
@@ -360,7 +367,7 @@ width: 100%;}
 .form_input input:focus, .form_input textarea:focus{outline:none;}
 
 @media screen and (max-width:991px) and (min-width:768px) {
-.submit_button button {background: #00b7f6;border: none;color: #fff;width: 173px;padding: 15px 0px;    font-size: 16px;    text-transform: uppercase;font-family: 'Century Gothic-bold';}
+.submit_button button {background: #0A5D7B;border: none;color: #fff;width: 173px;padding: 15px 0px;    font-size: 16px;    text-transform: uppercase;font-family: 'Century Gothic-bold';}
 .email_image img {max-width: 50px;margin-top: 12px;}
 .slider-container{ padding:0px 15px;}
 .our_team{ padding-bottom:60px;}
