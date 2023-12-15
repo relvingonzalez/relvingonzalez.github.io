@@ -14,7 +14,9 @@ img {
     width: 100%;
     align-items: center;
 }
-
+.flex-column {
+    flex-direction: column;
+}
 .flex.justify-center {
     justify-content: center;
 }
@@ -37,15 +39,23 @@ img {
     text-orientation: upright;
 }
 
+.biography {
+    color: black;
+    background-image: url('https://imgs.search.brave.com/BaO6gb9Ganb9EwIehFyNA4DYa1iByQl0LAFczAEytU8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxOS8w/NC8wOC8xMy81Mi9w/YXBlci00MTEyMDYz/XzY0MC5qcGc');
+    padding: 0 30px;
+}
+
 /**
 * Navigation
 **/
+header {
+    position: sticky;
+    top: 0;
+}
 
 nav {
     overflow: hidden;
-    background-color: #333;
-    position: sticky;
-}
+    background-color: #333;}
 
 nav ul {
     list-style: none;
