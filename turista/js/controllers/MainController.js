@@ -44,7 +44,7 @@
                             iconColor: 'white'
                         }
                     };
-                    vm.mapMarkers = geodataToMarkers(vm.geodata);
+                    vm.mapMarkers = geodataToMarkers(vm.geodata.data);
                     vm.mapMarkers.push(pointOfOrigin);
                 }
             }
