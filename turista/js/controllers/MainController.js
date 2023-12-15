@@ -23,12 +23,6 @@
                 vm.lat = position.lat;
                 vm.lng = position.lng;
 
-                vm.mapCenter = {
-                    lat: vm.lat,
-                    lng: vm.lng,
-                    zoom: 30
-                };
-
                 places.getWikipediaPlaces(vm.lat,vm.lng).then(pointOfOrigin);
 
                 function pointOfOrigin(geodata){
@@ -46,6 +40,11 @@
                     };
                     vm.mapMarkers = geodataToMarkers(vm.geodata.data);
                     vm.mapMarkers.push(pointOfOrigin);
+                    vm.mapCenter = {
+                        lat: vm.lat,
+                        lng: vm.lng,
+                        zoom: 30
+                    };
                 }
             }
         }
