@@ -116,6 +116,7 @@ nav a.active {
     background: white;
     font-family: "Permanent Marker";
     clear: both;
+    color: black;
 }
 
 .bubble:before {
