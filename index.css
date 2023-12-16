@@ -109,8 +109,12 @@ body {
 }
 
 .bubble {
+    font-family: 'SequentialistBB';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/306FA6_1_0.woff2') format('woff2'),
+    url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/306FA6_0_0.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
     display: inline-block;
-
     position: relative;
     padding: 30px 40px;
     border-radius: 10px;
