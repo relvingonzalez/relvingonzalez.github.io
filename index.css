@@ -101,3 +101,57 @@ nav a.active {
     -moz-box-shadow: 0px 0px 56px -17px rgba(13,32,161,0.82);
     box-shadow: 0px 0px 56px -17px rgba(13,32,161,0.82);
   }
+
+  /** speech bubbles **/
+  @import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+body {
+  background: #af9;
+}
+
+.bubble {
+    display: inline-block;
+
+    position: relative;
+    padding: 30px 40px;
+    border-radius: 10px;
+    border: 3px solid black;
+    background: white;
+    font-family: "Permanent Marker";
+    clear: both;
+}
+
+.bubble:before {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    height: 50px;
+    width: 90px;
+}
+
+.bubble.left {
+        float: left;
+        margin: 10px 100px 60px 10px;
+}
+
+.bubble.left:before {
+    border-radius: 0 0 100%;     
+    box-shadow: 
+        -2px -2px 0 0 #000 inset,
+        -23px 0 0 0 #fff inset,
+        -25px -2px 0 0 #000 inset;
+    left: 0;
+}
+
+.bubble.right {
+    float: right;
+    margin: 10px 10px 60px 100px;
+}
+
+.bubble.right:before {
+    border-radius: 0 0 0 100%;     
+    box-shadow: 
+        2px -2px 0 0 #000 inset,
+        23px 0 0 0 #fff inset,
+        25px -2px 0 0 #000 inset;
+    right: 0;
+}
