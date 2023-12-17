@@ -1,69 +1,361 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Relvin Gonzalez Portfolio</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a class="active" href="/"> Vanilla </a></li>
-                    <li><a href="turista/index.html"> AngularJS </a></li>
-                </ul>
-            </nav>
-        </header>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <h1 class="w-100 text-center uppercase">Relvin Gonzalez's Portfolio</h1>
-        <div class="flex justify-center">
-            <p class="uppercase vertical-text">Technology Optimization Software</p>
-            <div>
-                <img class="batman" src="https://imgs.search.brave.com/v8yTXOU2fzD8uldjM6sO6CBARt7BVlCaGN53p2qviNo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2JiLzYy/L2M1L2JiNjJjNTEx/MjE2NDU0YTdhYjU2/NzY2ZTM5ZmJhODEx/LmpwZw" alt="image of batman">
-            </div>
-            <p class="uppercase vertical-text">Courage Wisdom Perseverance Justice</p>
-        </div>
-        <div class="biography flex flex-column">
-            <p>This is a simple Javascript, HTML, and CSS page. No frameworks of any kind were used in the making of this page.</p>
+<html lang="en">
+  <head>
+  	<!-- Global site tag (gtag.js) - Google Analytics -->
+  	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-156975611-1"></script>
+  	<script>
+  	  window.dataLayer = window.dataLayer || [];
+  	  function gtag(){dataLayer.push(arguments);}
+  	  gtag('js', new Date());
 
-            <p>Bachelor’s degree in Computer Engineering. 10+ years of experience in React, Angular, HTML, CSS, and many other languages and frameworks.</p>
+  	  gtag('config', 'UA-156975611-1');
+  	</script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-            <h2>What past clients have to say about me:</h2>
+    <title>Otsan LLC</title>
+    <meta name="Description" content="Otsan LLC - Austin, TX - Your web development company for all your single page application needs! Angular, AngularJS, Web design, development, single page applications, web apps, android apps, website maintenance and optimization.">
+    <meta name="Keywords" content="angular, angularjs, otsan, austin, tx, texas, longhorn, bbq, llc, software, web, development, javascript, programmer, application, app, apps, web apps, company, freelancer, develop my app">
 
-            <blockquote>
-                <p>Relvin learns quickly and needed very little direction during the project. His work was delivered on time and very high quality. I recommend him highly and will work with him again.</p>
-                <footer>—enhancements on AngularJS and a complete overhaul of the app into ReactJS, <cite>startup company</cite></footer>
-            </blockquote>
+    <meta name="author" content="Relvin Gonzalez">
+    <meta name="theme-color" content="#10B5EE"/>
+				
+	<!--<link href="css/font-awesome.css" rel="stylesheet">-->
+	<link rel="stylesheet" href="css/font-awesome.css"> 
+	<link rel="stylesheet" href="css/photoswipe.css"> 
+    <link rel="stylesheet" href="css/default-skin.css"> 
 
-            <blockquote>
-                <p>Relvin is a pure treasure on Upwork... solid work, good ethics, friendly and professional!</p>
-                <footer>—Knowledge transfer app written in AngularJS, HTML, and CSS based on the design concept, <cite>large company</cite></footer>
-            </blockquote>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-            <div class="bubble right">
-                <p>Relvin is the most reliable AngularJS coder on Upwork. He gets into the job fully, communicates well, delivers quality work and is a friendly person. A real asset for any JS project! This was my 3rd job with him, perfect!</p>
-            </div>
-            <p>—Knowledge transfer app written in AngularJS, HTML, and CSS based on the design concept, <cite>Upwork client</cite></p>
+	<link href="css/style.css" rel="stylesheet">
 
+    <!-- icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/icons/ms-icon-144x144.png">
+	
+</head>
+<body>
+<!-- header start here -->
+<!--<div class="sticky">-->
+<div class="header">
+	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-light bg-faded">
+		  <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Otsan LLC logo" /></a>
+		  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
 
-            <h2> Direct link to Upwork profile:</h2>
-            <a href="https://www.upwork.com/freelancers/relvin?s=1110580755057594368"> https://www.upwork.com/freelancers/relvin?s=1110580755057594368</a>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item"><a class="nav-link nlink1" href="#hero-banner">Home</a></li>
+		      <li class="nav-item"><a class="nav-link nlink2" href="#what-we-do">About Us</a></li>
+		      <li class="nav-item"><a class="nav-link nlink3" href="#service-section">Services</a></li>
+		      <li class="nav-item"><a class="nav-link nlink4" href="#our-team">Our Team</a></li>
+		      <li class="nav-item"><a class="nav-link nlink5" href="#our-portfolio">Our Works</a></li>
+		      <li class="nav-item"><a class="nav-link nlink6" href="#our-testimonial">Testimonials</a></li>
+		      <li class="nav-item"><a class="nav-link nlink7" href="#contact-us-form">Contact Us</a></li>
+			  <li class="nav-item"><a class="nav-link nlink1" href="turista/index.html">Turista</a></li>
+		    </ul>
+		  </div>
+		</nav>		
+	</div>
+</div>
 
-            <h2>Links to Github and Stackoverflow:</h2>
-            <a href="https://github.com/relvingonzalez">https://github.com/relvingonzalez</a>
-            <a href="https://stackoverflow.com/users/3042625/rgonzalez">https://stackoverflow.com/users/3042625/rgonzalez</a>
-            </p>
-        </div>
- 
-        <script src="" async defer></script>
-    </body>
+<!--</div>-->
+<!-- header end here -->
+
+<!-- bodycontent start here -->
+<div class="hero_banner" id="hero-banner">
+	<div class="container">
+		<h2>Think. Otsan.</h2>
+		<p>Otsan LLC is the fastest growing website development and design solutions provider in Austin, Texas. We specialize in single page and progressive web applications using Angular for the front end development. We build full-stack angular applications with PHP as your backend and MySQL or other types of databases. We are Google certified!
+		</p>
+		<a class="see-more" href="#what-we-do">See more</a>
+	</div>
+</div>
+<div class="what_we_do" id="what-we-do">
+	<div class="inner_container">
+		<h2>What we do</h2>
+		<p>	
+		Otsan LLC offers you peace of mind knowing that your idea is in good hands and is being developed using the latest in technology and best practices. We optimize your web pages so that it is an SEO friendly website and can be picked up by search engines so that you can reach your target audience quicker.
+		</p>
+		<p>
+		Build an audience you can be proud of. Creat content that is great content, and leave the keyword research, URL structure, web design, website development, user experience, and SEO-friendliness to us. 
+		</p>
+		<p>
+		From the live music capital of the world(and beyond), we will build your web apps using HTML, CSS and Javascript. We will elevate your app one data binding and dependency injection at a time. We can design your responsive website from scratch, or use a framework such as Twitter Bootstrap or Angular Material for material design. 
+		</p>
+		<p>
+		Someone from the team will always be online to listen to your concerns, ideas, or any other feedback you want to relay to us. Never feel left alone with your project again!
+		</p>
+		<p>Whether you are considering building a site or app from scratch or are looking for a design refresh, we are confident you will be pleased with the results.</p>
+		<div class="way-of-work">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="same_height"><img src="images/pencil.png" alt="Pen icon" /></div>
+					<h3>Pixel Perfect Design</h3>
+					<p>We work on Adobe software to bring you pixel perfect designs for your website, logo and all stages of your projects.</p>
+				</div>
+				<div class="col-md-4">
+					<div class="same_height"><img src="images/screenicon.png" alt="Screen icon" /></div>
+					<h3>Theme Development</h3>
+					<p>We use the latest web frameworks to build single page applications and fast websites.</p>
+				</div>
+				<div class="col-md-4">
+					<div class="same_height"><img src="images/drumicon.png" alt="Drum icon" /></div>
+					<h3>Strong Backend</h3>
+					<p>With experience in both SQL and noSQL databases we are here to build a complete solution for your digital problems.</p>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+<div class="our_services" id="service-section">
+	<div class="container">
+		<h2>Our Services</h2>
+		<p>From the website design to making the website functional, we will be with you every step of the way and stay with you even after the project has finished to make any changes or tweaks as needed. Contrary to other companies, our designs are not the only thing responsive about us!</p>
+		<div class="services_widget">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="service_image">
+						<img src="images/screenicon.png" alt="Screen icon" />
+					</div>
+					<div class="service_content">
+						<h3>Modern designs</h3>
+						<p>Our designs stay up to date with the most modern look and feel. We never use pre-made themes or WordPress sites that look like everyone else's.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="service_image">
+						<img src="images/setting-icon.png" alt="Setting icon" />
+					</div>
+					<div class="service_content">
+						<h3>Easy to customize</h3>
+						<p>Our designs and websites are well organized which makes them easy to be customized.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="service_image">
+						<img src="images/pencil.png" alt="Pencil icon" />
+					</div>
+					<div class="service_content">
+						<h3>Colorful</h3>
+						<p>Your site will have an exquisite and unique palette of colors.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="service_image">
+						<img src="images/noteicon.png" alt="Note icon" />
+					</div>
+					<div class="service_content">
+						<h3>Full Documentation</h3>
+						<p>Our code is professionally written and fully documented.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="service_image">
+						<img src="images/responsive.png" alt="Responsive icon" />
+					</div>
+					<div class="service_content">
+						<h3>Responsive</h3>
+						<p> Designs that are fully responsive using a combination of bootstrap, flexbox and media queries.</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="service_image">
+						<img src="images/book2.png" alt="Book icon" />
+					</div>
+					<div class="service_content">
+						<h3>Clean design</h3>
+						<p>A clean and beautiful design that will make your site stand out.</p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+<div class="our_team" id="our-team">
+	<div class="container">
+		<h2>Our Team</h2>
+		<p>Our team of professionals is constantly growing.</p>
+		<div class="row picture-flex-container">
+			<div class="col-md-4">
+				<div class="team-image-container">
+					<img src="images/relvin.webp" alt="Relvin Gonzalez Portrait" />
+					<a class="custom-link badge google" target="_blank" href="https://www.credential.net/wu10v32s" rel="noopener">
+						<img src="images/msbadge.webp" alt="Google Mobile Web Specialist Certification Badge">
+					</a>
+				</div>
+				<h3>Relvin Gonzalez <span> (Owner)</span></h3>
+				<p>Google Certified Mobile Web Specialist. Expert in Angular and AngularJS.</p>
+
+			</div>
+			<div class="col-md-4">
+				<a class="custom-link" target="_blank" href="https://www.metadist.de" rel="noopener">
+					<img src="images/ralf.webp" alt="Ralf Schwoebel" />
+					<h3>Ralf Schwoebel</h3>
+					<p>Backend Architect</p>	
+				</a>
+			</div>  
+		</div>
+	</div>
+</div>
+<div class="our_work_portfolio" id="our-portfolio">
+	<div class="container">
+		<h2>Past Projects</h2>
+		<p>These are only some of our past designs</p>
+		<div class="row">
+			<div class="col-md-4">
+				<a class="custom-link" href="https://www.hemmersbach.com" target="_blank" title="Hemmersbach: Knowledge Transfer App" rel="noopener">
+					<img src="images/kt_app_backoffice.webp" alt="www.hemmersbach.com : Global Surveys and Inventory" />
+				</a>
+			</div>
+			<div class="col-md-4">
+				<img src="images/example3.webp" alt="Past Design Example image" />
+			</div>
+			<div class="col-md-4">
+				<img src="images/example4.webp" alt="Past Design Example image" />
+			</div>
+		</div>
+		<div class="row top-buffer">
+			<div class="col-md-4">
+				<img src="images/example5.webp" alt="Past design example image" />
+			</div>
+			<div class="col-md-4">
+				<img src="images/p2.webp" alt="Past design example image" />
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bodycontent end here -->
+<!-- slider start here -->
+<div class="testimonail_slider client_feedback_slides" id="our-testimonial">
+<h2>What Our Clients Say</h2>
+	<div class="slider-container">
+	  <div class="row">
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+						<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
+					</ol>
+				<div class="carousel-inner" role="listbox">
+					<div class="carousel-item active" role="option">
+						<div class="row no-gutters">
+							<div class="crousel_content">
+								<p>Relvin is the most reliable AngularJS coder. He gets into the job fully, communicates well, delivers quality work and is a friendly person. A real asset for any JS project! This was my 3rd job with him, perfect! </p>
+								<img src="images/feedback-sign.png" alt="Feedback icon" />
+								<h3>Ralf</h3>
+								<h4>Orga.zone</h4>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item" role="option">
+						<div class="row no-gutters">
+							<div class="crousel_content">
+								<p>Thanks for your work on this phase of the project, Relvin. Appreciated your timeliness, communication, and skills. </p>
+								<img src="images/feedback-sign.png" alt="Feedback icon" />
+								<h3>Verseflow</h3>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item" role="option">
+						<div class="row no-gutters"> 
+							<div class="crousel_content">
+								<p>Relvin is a highly talented front-end developer and did a tremendous and efficient job on this project. Will gladly work with him again! </p>
+								<img src="images/feedback-sign.png" alt="Feedback icon" />
+								<h3>Mark</h3>
+							</div>
+						</div>
+					</div>
+				</div>  
+				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+		</div>
+	</div>
+  </div>
+</div>
+<!-- slider end here -->
+
+<!-- contact us section start here -->
+<div class="contact_us_section" id="contact-us-form">
+	<div class="container">
+		<h2>Contact Us</h2>
+		<p>More ways to contact us will be added in the future. For now, use the email presented here!</p>
+		<div class="contact_content row">
+			<div class="col-md-6">
+				<h3>Talk to us!</h3>
+				<div class="email_section">
+					<div class="email_image">
+						<img src="images/email-icon.png" alt="Email icon" />
+					</div>
+					<div class="email_content">
+						<h4>Email</h4>
+						<h5>otsanllc@gmail.com</h5>
+					</div>
+				</div>
+				<!-- <div class="email_section">
+					<div class="email_image">
+						<img src="images/addressicon.png" alt="" />
+					</div>
+					<div class="email_content">
+						<h4>Address</h4>
+						<h5>Address coming soon</h5>
+					</div>
+				</div> -->
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- contact us section end here -->
+
+<!-- footer start here -->
+<div class="footer">
+	<div class="container">
+		<div class="follow_us">
+			<h2>Follow Us</h2>
+			<ul>
+				<li><a href="https://www.facebook.com/otsanllc" aria-label="Visit us on Facebook!"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+			</ul>
+			<div class="copyright_content">
+				<p id="copyright"></p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- footer start here -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/e45d0fdf2c5a6713f0ce59d21/9c2219c3af448c50ead9567e1.js");</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+
+<script src="js/main.js"></script>
+<script src="js/scripts.js"></script>
+</body>
 </html>
