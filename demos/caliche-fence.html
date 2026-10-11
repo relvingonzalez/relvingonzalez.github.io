@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Caliche Fence &amp; Deck</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--cedar:#8A4B2A;--cedar-dk:#5E321B;--stone:#E9E6E1;--rock:#C9C3BA;--char:#26231F;--mute:#635C54;--white:#fff;--sun:#E8A33D}
+*{box-sizing:border-box;margin:0}
+body{font-family:"IBM Plex Sans",system-ui,sans-serif;color:var(--char);background:var(--white);line-height:1.55}
+a{color:inherit}
+a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+.concept{background:var(--char);color:#DDD6CD;font-size:.82rem;text-align:center;padding:.45rem 1rem}
+header{display:flex;justify-content:space-between;align-items:center;padding:1rem clamp(1rem,5vw,4rem);border-bottom:1px solid var(--stone)}
+.logo{font-family:"Big Shoulders Display";font-weight:900;font-size:1.7rem;letter-spacing:.01em;color:var(--cedar-dk)}
+header a{font-weight:600;text-decoration:none}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);padding:3rem clamp(1rem,5vw,4rem) 4rem;align-items:start;
+ background:repeating-linear-gradient(90deg,#fff 0 3.2rem,#F6F3EF 3.2rem 3.35rem)}
+.hero h1{font-family:"Big Shoulders Display";font-weight:900;font-size:clamp(3rem,7.5vw,5.6rem);line-height:.92;color:var(--cedar-dk);text-transform:none}
+.hero p{margin-top:1.2rem;font-size:1.12rem;color:var(--mute);max-width:42ch}
+.hero ul{margin-top:1.4rem;padding:0;list-style:none;display:grid;gap:.5rem;font-weight:600}
+.hero li::before{content:"";display:inline-block;width:.7rem;height:.7rem;background:var(--cedar);margin-right:.6rem;transform:translateY(1px)}
+.est{background:var(--char);color:var(--white);border-radius:12px;padding:1.8rem}
+.est h2{font-family:"Big Shoulders Display";font-weight:700;font-size:1.9rem;line-height:1}
+.est > p{color:#BDB5AB;margin:.4rem 0 1.2rem;font-size:.95rem}
+.field{display:grid;gap:.35rem;margin-bottom:1rem}
+.field label{font-weight:600;font-size:.95rem}
+.field select,.field input{font:inherit;padding:.7rem .8rem;border-radius:8px;border:1px solid #4A443D;background:#34302B;color:var(--white)}
+.range-row{display:flex;gap:1rem;align-items:center}
+.range-row input{flex:1;padding:0;accent-color:var(--sun)}
+.range-row output{font-weight:600;min-width:5.5rem;text-align:right}
+.result{margin-top:1.2rem;border-top:1px solid #4A443D;padding-top:1.2rem}
+.result small{color:#BDB5AB;display:block}
+.result strong{font-family:"Big Shoulders Display";font-size:3rem;font-weight:900;color:var(--sun);line-height:1.05;display:block}
+.est .btn{margin-top:1rem;width:100%;text-align:center}
+.btn{display:inline-block;padding:.9rem 1.4rem;border-radius:8px;font-weight:600;text-decoration:none;background:var(--cedar);color:var(--white)}
+section{padding:4rem clamp(1rem,5vw,4rem)}
+h2.big{font-family:"Big Shoulders Display";font-weight:900;font-size:clamp(2.2rem,4.5vw,3.2rem);line-height:1;color:var(--cedar-dk);margin-bottom:1.6rem;max-width:18ch}
+.types{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:1.5rem}
+.type .swatch{height:7rem;border-radius:8px;margin-bottom:.9rem}
+.t1 .swatch{background:repeating-linear-gradient(90deg,#B06B3C 0 22px,#9A5B31 22px 24px)}
+.t2 .swatch{background:repeating-linear-gradient(0deg,#7A6A5C 0 14px,#655748 14px 16px)}
+.t3 .swatch{background:linear-gradient(#3A3733,#3A3733) top/100% 6px no-repeat,repeating-linear-gradient(90deg,transparent 0 30px,#3A3733 30px 34px),#E9E6E1}
+.t4 .swatch{background:repeating-linear-gradient(90deg,#A06A45 0 40px,#8A5A39 40px 42px)}
+.type strong{display:block;font-size:1.1rem}
+.type span{color:var(--mute)}
+.process{background:var(--stone)}
+.process ol{padding-left:1.3rem;display:grid;gap:1rem;max-width:44rem;font-size:1.05rem}
+.process li strong{display:block}
+.area{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.area p{color:var(--mute);max-width:44ch}
+.towns{display:flex;flex-wrap:wrap;gap:.5rem;list-style:none;padding:0;align-items:flex-start;align-content:flex-start}
+.towns li{border:1px solid var(--rock);border-radius:999px;padding:.35rem .9rem}
+footer{padding:1.5rem clamp(1rem,5vw,4rem);color:var(--mute);font-size:.85rem;border-top:1px solid var(--stone)}
+@media (max-width:820px){.hero,.area{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="concept" role="note">Design concept by OtsanLLC. Caliche Fence &amp; Deck is a fictional company.</div>
+<header>
+  <div class="logo">Caliche Fence &amp; Deck</div>
+  <a href="#estimate">Get an estimate</a>
+</header>
+<main>
+<div class="hero">
+  <div>
+    <h1>Fences and decks built for Texas heat.</h1>
+    <p>Cedar, steel and pipe fencing, plus decks that don't warp after one summer. Know your ballpark price before anyone comes out.</p>
+    <ul>
+      <li>Written quote within 48 hours</li>
+      <li>Licensed and insured crews</li>
+      <li>Two-year workmanship warranty</li>
+    </ul>
+  </div>
+  <form class="est" id="estimate" aria-labelledby="est-h" onsubmit="return false">
+    <h2 id="est-h">Ballpark your fence</h2>
+    <p>A rough range only. Your written quote comes after a free site visit.</p>
+    <div class="field">
+      <label for="mat">Material</label>
+      <select id="mat">
+        <option value="32,45">Cedar privacy, 6 ft</option>
+        <option value="28,38">Cedar picket, 4 ft</option>
+        <option value="38,55">Horizontal cedar, 6 ft</option>
+        <option value="30,42">Pipe and wire ranch fence</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="len">Length of fence</label>
+      <div class="range-row"><input id="len" type="range" min="40" max="400" step="10" value="150"><output id="lenout" for="len">150 ft</output></div>
+    </div>
+    <div class="field">
+      <label for="gates">Gates</label>
+      <select id="gates"><option value="0">None</option><option value="1" selected>1 walk gate</option><option value="2">2 walk gates</option><option value="3">Walk gate and drive gate</option></select>
+    </div>
+    <div class="result" aria-live="polite">
+      <small>Estimated range</small>
+      <strong id="range">$5,100 – $7,100</strong>
+      <small>Sample prices for this concept. Not a real quote.</small>
+    </div>
+    <a class="btn" href="#">Book a free site visit</a>
+  </form>
+</div>
+
+<section aria-labelledby="types-h">
+  <h2 class="big" id="types-h">What we build</h2>
+  <div class="types">
+    <div class="type t1"><div class="swatch" aria-hidden="true"></div><strong>Cedar privacy fence</strong><span>The backyard classic, with steel posts set in concrete.</span></div>
+    <div class="type t2"><div class="swatch" aria-hidden="true"></div><strong>Horizontal cedar</strong><span>A modern look for front yards and pool areas.</span></div>
+    <div class="type t3"><div class="swatch" aria-hidden="true"></div><strong>Pipe and wire</strong><span>Ranch fencing for acreage and livestock.</span></div>
+    <div class="type t4"><div class="swatch" aria-hidden="true"></div><strong>Decks and pergolas</strong><span>Composite or cedar, with shade where you need it.</span></div>
+  </div>
+</section>
+
+<section class="process" aria-labelledby="proc-h">
+  <h2 class="big" id="proc-h">From estimate to finished fence</h2>
+  <ol>
+    <li><strong>Ballpark it here</strong>Get a rough range in under a minute.</li>
+    <li><strong>Free site visit</strong>We measure, check your property lines and talk through options.</li>
+    <li><strong>Written quote in 48 hours</strong>One price, no surprises later.</li>
+    <li><strong>Build</strong>Most residential fences go up in two to three days.</li>
+  </ol>
+</section>
+
+<section class="area" aria-labelledby="area-h">
+  <div>
+    <h2 class="big" id="area-h">Where we work</h2>
+    <p>Crews based in Central Texas, serving homes and ranches across these areas.</p>
+  </div>
+  <ul class="towns"><li>Bastrop</li><li>Elgin</li><li>Taylor</li><li>Georgetown</li><li>Lockhart</li><li>Dripping Springs</li></ul>
+</section>
+</main>
+<footer>Design concept by OtsanLLC. Company and prices are fictional.</footer>
+<script>
+(function(){
+  var mat=document.getElementById('mat'),len=document.getElementById('len'),gates=document.getElementById('gates'),
+      out=document.getElementById('lenout'),range=document.getElementById('range');
+  var gateCost=[0,450,900,2200];
+  function fmt2(n){return '$'+(Math.round(n/100)*100).toLocaleString('en-US')}
+  function calc(){
+    var r=mat.value.split(',').map(Number),L=+len.value,g=gateCost[+gates.value];
+    out.textContent=L+' ft';
+    range.textContent=fmt2(r[0]*L+g)+' – '+fmt2(r[1]*L+g);
+  }
+  [mat,len,gates].forEach(function(el){el.addEventListener('input',calc)});
+  calc();
+})();
+</script>
+</body>
+</html>
