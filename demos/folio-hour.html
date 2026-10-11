@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Folio Hour</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--plum:#34203F;--plum-2:#4D3360;--paper:#F7F8FB;--line:#E3E5EE;--mark:#FFE36A;--teal:#1F7A72;--ink:#1C1724;--mute:#5F5A6B;--white:#fff}
+*{box-sizing:border-box;margin:0}
+body{font-family:Figtree,system-ui,sans-serif;color:var(--ink);background:var(--white);line-height:1.6}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.concept{background:var(--plum);color:#E6DDEB;font-size:.82rem;text-align:center;padding:.45rem 1rem}
+header{display:flex;justify-content:space-between;align-items:center;padding:1.1rem clamp(1rem,5vw,4rem)}
+.logo{font-family:Newsreader;font-weight:600;font-size:1.55rem;color:var(--plum)}
+header .btn{margin:0}
+.btn{display:inline-block;padding:.85rem 1.35rem;border-radius:10px;font-weight:600;text-decoration:none;background:var(--plum);color:var(--white);border:0;cursor:pointer;font:inherit;font-weight:600}
+.btn.light{background:var(--white);color:var(--plum)}
+.hero{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(2rem,5vw,4.5rem);padding:2.5rem clamp(1rem,5vw,4rem) 4.5rem;align-items:center}
+.hero h1{font-family:Newsreader;font-weight:400;font-size:clamp(2.5rem,5.6vw,4.2rem);line-height:1.04;letter-spacing:-.015em;color:var(--plum)}
+.hero p{margin-top:1.1rem;font-size:1.15rem;color:var(--mute);max-width:42ch}
+.hero .actions{margin-top:1.8rem;display:flex;gap:1rem;align-items:center;flex-wrap:wrap}
+.hero .actions small{color:var(--mute)}
+.page{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:2rem 2rem 1.4rem;box-shadow:0 30px 60px -30px rgba(52,32,63,.35);position:relative}
+.page .chap{font-size:.85rem;color:var(--mute);margin-bottom:.8rem}
+.page p.text{font-family:Newsreader;font-size:1.2rem;line-height:1.75;color:#2B2433}
+mark{background:linear-gradient(transparent 12%,var(--mark) 12%,var(--mark) 88%,transparent 88%);color:inherit;padding:0 .1em}
+.note{margin-top:1.2rem;display:flex;gap:.8rem;align-items:flex-start;background:var(--white);border:1px solid var(--line);border-radius:10px;padding:.9rem 1rem}
+.avatar{width:2rem;height:2rem;border-radius:50%;background:var(--teal);color:var(--white);display:grid;place-items:center;font-weight:700;font-size:.85rem;flex:none}
+.note b{display:block;font-size:.9rem}
+.note span{font-size:.95rem;color:var(--mute)}
+.note .count{margin-left:auto;font-size:.85rem;color:var(--teal);font-weight:600;white-space:nowrap}
+section{padding:4.5rem clamp(1rem,5vw,4rem)}
+h2{font-family:Newsreader;font-weight:400;font-size:clamp(1.9rem,3.6vw,2.7rem);color:var(--plum);line-height:1.1;max-width:22ch;margin-bottom:1.6rem}
+.steps{background:var(--paper)}
+.steps ol{list-style:none;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;counter-reset:s}
+.steps li{counter-increment:s}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:2.2rem;height:2.2rem;border-radius:50%;background:var(--plum);color:var(--white);font-weight:700;margin-bottom:.9rem}
+.steps li strong{display:block;font-size:1.15rem;margin-bottom:.2rem}
+.steps li span{color:var(--mute)}
+.pricing{text-align:left}
+.toggle{display:inline-flex;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:.3rem;margin-bottom:2rem}
+.toggle button{border:0;background:transparent;font:inherit;font-weight:600;padding:.55rem 1.1rem;border-radius:999px;cursor:pointer;color:var(--mute)}
+.toggle button[aria-pressed="true"]{background:var(--plum);color:var(--white)}
+.toggle em{font-style:normal;color:var(--teal);font-weight:700}
+.toggle button[aria-pressed="true"] em{color:var(--mark)}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;align-items:stretch}
+.plan{border:1px solid var(--line);border-radius:14px;padding:1.6rem;display:flex;flex-direction:column}
+.plan.pick{background:var(--plum);color:var(--white);border-color:var(--plum)}
+.plan h3{font-size:1.15rem}
+.plan .for{color:var(--mute);font-size:.95rem;min-height:3em}
+.plan.pick .for{color:#CDBFD6}
+.price{font-family:Newsreader;font-size:3rem;line-height:1;margin:1rem 0 .2rem}
+.price small{font-family:Figtree;font-size:.95rem;color:var(--mute)}
+.plan.pick .price small{color:#CDBFD6}
+.plan ul{padding-left:1.1rem;margin:1rem 0 1.4rem;display:grid;gap:.4rem;flex:1}
+.plan .btn{text-align:center}
+.plan:not(.pick) .btn{background:var(--paper);color:var(--plum);border:1px solid var(--line)}
+.faq{display:grid;grid-template-columns:1fr 1.4fr;gap:3rem}
+details{border-top:1px solid var(--line);padding:1rem 0}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{font-weight:600;cursor:pointer;font-size:1.05rem}
+details p{margin-top:.6rem;color:var(--mute);max-width:56ch}
+.cta{background:var(--plum);color:var(--white);display:flex;justify-content:space-between;align-items:center;gap:2rem;flex-wrap:wrap}
+.cta h2{color:var(--white);margin:0}
+footer{padding:1.5rem clamp(1rem,5vw,4rem);color:var(--mute);font-size:.85rem}
+@media (max-width:860px){.hero,.faq{grid-template-columns:1fr}.steps ol,.plans{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="concept" role="note">Design concept by OtsanLLC. Folio Hour is a fictional product.</div>
+<header>
+  <div class="logo">Folio Hour</div>
+  <a class="btn" href="#pricing">Start free</a>
+</header>
+<main>
+<div class="hero">
+  <div>
+    <h1>Read the same chapter as your book club, this week.</h1>
+    <p>Folio Hour sets a weekly reading pace for your group and keeps everyone's highlights and notes on the page they belong to. No more group chats full of spoilers.</p>
+    <div class="actions">
+      <a class="btn" href="#pricing">Start a 14-day free trial</a>
+      <small>No card needed to try it.</small>
+    </div>
+  </div>
+  <figure class="page" aria-label="Example of a shared page with a highlight and a note">
+    <p class="chap">Chapter 7 · Week 3 of 8</p>
+    <p class="text">The house had been quiet for so long that <mark>she had started to mistake the silence for a kind of company</mark>, and when the letter came she almost resented it.</p>
+    <div class="note">
+      <span class="avatar" aria-hidden="true">MJ</span>
+      <div><b>Maya</b><span>This line made me put the book down for a minute.</span></div>
+      <span class="count">4 replies</span>
+    </div>
+  </figure>
+</div>
+
+<section class="steps" aria-labelledby="how-h">
+  <h2 id="how-h">How a club runs on Folio Hour</h2>
+  <ol>
+    <li><strong>Pick the book and a pace</strong><span>Choose how many weeks you want to take, and we split it into weekly chapters.</span></li>
+    <li><strong>Read and highlight</strong><span>Notes stay hidden until each member reaches that page, so nobody gets spoiled.</span></li>
+    <li><strong>Meet with everything in one place</strong><span>Open the week's best highlights and questions right before you talk.</span></li>
+  </ol>
+</section>
+
+<section class="pricing" id="pricing" aria-labelledby="price-h">
+  <h2 id="price-h">One club or a whole library of them</h2>
+  <div class="toggle" role="group" aria-label="Billing period">
+    <button type="button" aria-pressed="true" data-period="month">Monthly</button>
+    <button type="button" aria-pressed="false" data-period="year">Yearly <em>save 2 months</em></button>
+  </div>
+  <div class="plans">
+    <div class="plan">
+      <h3>Reader</h3><p class="for">Join clubs that friends invite you to.</p>
+      <p class="price">Free</p>
+      <ul><li>Join unlimited clubs</li><li>Highlights and notes</li><li>Spoiler-safe discussions</li></ul>
+      <a class="btn" href="#">Create an account</a>
+    </div>
+    <div class="plan pick">
+      <h3>Host</h3><p class="for">Run your own book club.</p>
+      <p class="price"><span data-m="$6" data-y="$60">$6</span> <small data-m="per month" data-y="per year">per month</small></p>
+      <ul><li>Up to 3 clubs you host</li><li>Weekly reading schedules</li><li>Meeting recap pages</li></ul>
+      <a class="btn light" href="#">Start free trial</a>
+    </div>
+    <div class="plan">
+      <h3>Library</h3><p class="for">For bookstores, libraries and schools.</p>
+      <p class="price"><span data-m="$29" data-y="$290">$29</span> <small data-m="per month" data-y="per year">per month</small></p>
+      <ul><li>Unlimited hosted clubs</li><li>Your logo on club pages</li><li>Member sign-up page</li></ul>
+      <a class="btn" href="#">Start free trial</a>
+    </div>
+  </div>
+</section>
+
+<section class="faq" aria-labelledby="faq-h">
+  <h2 id="faq-h">Questions people ask first</h2>
+  <div>
+    <details><summary>Do members need to pay?</summary><p>No. Only the person hosting the club needs a paid plan. Everyone they invite reads for free.</p></details>
+    <details><summary>Does it work with print books?</summary><p>Yes. Members can log their page and add notes by page number, so print and ebook readers can share one discussion.</p></details>
+    <details><summary>Can I cancel anytime?</summary><p>Yes. Cancel from your account settings, and your clubs stay readable until the end of your billing period.</p></details>
+  </div>
+</section>
+
+<section class="cta" aria-labelledby="cta-h">
+  <h2 id="cta-h">Start your next club this week.</h2>
+  <a class="btn light" href="#pricing">Start a 14-day free trial</a>
+</section>
+</main>
+<footer>Design concept by OtsanLLC. Folio Hour, its pricing and its content are fictional.</footer>
+<script>
+document.querySelectorAll('.toggle button').forEach(function(b){
+  b.addEventListener('click',function(){
+    var p=b.dataset.period;
+    document.querySelectorAll('.toggle button').forEach(function(x){x.setAttribute('aria-pressed',String(x===b))});
+    document.querySelectorAll('[data-m]').forEach(function(el){el.textContent=el.dataset[p==='year'?'y':'m']});
+  });
+});
+</script>
+</body>
+</html>

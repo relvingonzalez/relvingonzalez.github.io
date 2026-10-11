@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Sorrel &amp; Rye Bakehouse</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=Karla:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--rye:#4A2E1F;--crust:#A8642D;--butter:#F2D27A;--sage:#7C8C6A;--flour:#FFFFFF;--dust:#F4EFE6;--ink:#2B1D14;--mute:#6E5A4B}
+*{box-sizing:border-box;margin:0}
+body{font-family:Karla,system-ui,sans-serif;color:var(--ink);background:var(--flour);line-height:1.6}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:3px solid var(--crust);outline-offset:3px}
+.concept{background:var(--ink);color:#EADFD2;font-size:.82rem;text-align:center;padding:.45rem 1rem}
+header{display:flex;justify-content:space-between;align-items:center;padding:1.2rem clamp(1rem,5vw,4rem)}
+.logo{font-family:Fraunces;font-weight:800;font-size:1.5rem;color:var(--rye);letter-spacing:-.01em}
+nav{display:flex;gap:1.6rem;font-weight:600}
+nav a{text-decoration:none}
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(2rem,5vw,4rem);padding:2.5rem clamp(1rem,5vw,4rem) 4rem;align-items:start}
+.hero h1{font-family:Fraunces;font-weight:600;font-size:clamp(2.6rem,6vw,4.6rem);line-height:1.02;letter-spacing:-.02em;color:var(--rye);font-variation-settings:"opsz" 144}
+.hero p{margin-top:1.2rem;font-size:1.15rem;max-width:40ch;color:var(--mute)}
+.btn{display:inline-block;margin-top:1.8rem;background:var(--rye);color:var(--flour);padding:.95rem 1.5rem;border-radius:999px;font-weight:600;text-decoration:none}
+.board{background:var(--dust);border-radius:18px;padding:1.8rem;border:2px dashed #D9CBB5}
+.board h2{font-family:Fraunces;font-weight:600;font-size:1.35rem;color:var(--rye)}
+.board .date{color:var(--mute);font-size:.95rem;margin-bottom:1rem}
+.board ol{list-style:none;padding:0}
+.board li{display:grid;grid-template-columns:4.5rem 1fr auto;gap:1rem;align-items:baseline;padding:.85rem 0;border-top:1px solid #E2D6C3}
+.board time{font-family:Fraunces;font-weight:800;color:var(--crust);font-size:1.15rem}
+.board li span{font-weight:600}
+.board li small{display:block;font-weight:400;color:var(--mute)}
+.tag{font-size:.8rem;padding:.2rem .6rem;border-radius:999px;background:var(--butter);color:var(--rye);font-weight:600;white-space:nowrap}
+.tag.gone{background:#E6DFD5;color:var(--mute);text-decoration:line-through}
+section{padding:4rem clamp(1rem,5vw,4rem)}
+h2.big{font-family:Fraunces;font-weight:600;font-size:clamp(1.8rem,3.5vw,2.6rem);color:var(--rye);line-height:1.1;max-width:20ch;margin-bottom:1.6rem}
+.loaves{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:2rem}
+.loaf .shape{aspect-ratio:5/3;border-radius:50% 50% 38% 38%/62% 62% 38% 38%;margin-bottom:1rem}
+.loaf:nth-child(1) .shape{background:radial-gradient(ellipse at 40% 30%,#C98A4B,#7A4524)}
+.loaf:nth-child(2) .shape{background:radial-gradient(ellipse at 40% 30%,#8E6B4E,#3F2A1D);border-radius:46%/52%}
+.loaf:nth-child(3) .shape{background:radial-gradient(ellipse at 40% 30%,#E9C27A,#B57A35);border-radius:20px 20px 46% 46%/20px 20px 40% 40%}
+.loaf h3{font-family:Fraunces;font-weight:600;font-size:1.3rem}
+.loaf p{color:var(--mute)}
+.loaf strong{color:var(--crust)}
+.preorder{background:var(--sage);color:var(--flour);display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.preorder h2.big{color:var(--flour)}
+.preorder p{max-width:44ch;font-size:1.1rem}
+.preorder ol{padding-left:1.3rem;display:grid;gap:.7rem;font-size:1.05rem}
+.preorder .btn{background:var(--butter);color:var(--rye)}
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.visit dl{display:grid;grid-template-columns:7rem 1fr;gap:.6rem 1rem}
+.visit dt{color:var(--mute)}
+footer{padding:1.5rem clamp(1rem,5vw,4rem);color:var(--mute);font-size:.85rem;border-top:1px solid #EEE6DA}
+@media (max-width:780px){.hero,.preorder,.visit{grid-template-columns:1fr}nav{display:none}}
+</style>
+</head>
+<body>
+<div class="concept" role="note">Design concept by OtsanLLC. Sorrel &amp; Rye is a fictional bakery.</div>
+<header>
+  <div class="logo">Sorrel &amp; Rye</div>
+  <nav aria-label="Main"><a href="#bread">Bread</a><a href="#preorder">Preorder</a><a href="#visit">Visit</a></nav>
+</header>
+<main>
+<div class="hero">
+  <div>
+    <h1>Slow bread, baked before sunrise.</h1>
+    <p>A neighborhood bakehouse making naturally leavened loaves, laminated pastry and one good cookie. Come early. When it's gone, it's gone.</p>
+    <a class="btn" href="#preorder">Preorder for Saturday</a>
+  </div>
+  <div class="board" aria-labelledby="board-h">
+    <h2 id="board-h">Out of the oven today</h2>
+    <p class="date">Thursday's bake</p>
+    <ol>
+      <li><time>6:30</time><span>Country sourdough<small>48-hour ferment</small></span><b class="tag gone">Sold out</b></li>
+      <li><time>7:15</time><span>Morning buns<small>Orange zest, cinnamon sugar</small></span><b class="tag">A few left</b></li>
+      <li><time>9:00</time><span>Seeded rye<small>Sunflower, flax, caraway</small></span><b class="tag">Plenty</b></li>
+      <li><time>11:30</time><span>Brown butter cookies<small>Flaky salt on top</small></span><b class="tag">Plenty</b></li>
+    </ol>
+  </div>
+</div>
+
+<section id="bread" aria-labelledby="bread-h">
+  <h2 class="big" id="bread-h">Three loaves we bake every single day</h2>
+  <div class="loaves">
+    <div class="loaf"><div class="shape" aria-hidden="true"></div><h3>Country sourdough</h3><p>Open crumb, blistered crust, a little tang. <strong>$9</strong></p></div>
+    <div class="loaf"><div class="shape" aria-hidden="true"></div><h3>Seeded rye</h3><p>Dense, dark and made for butter. <strong>$10</strong></p></div>
+    <div class="loaf"><div class="shape" aria-hidden="true"></div><h3>Honey milk sandwich loaf</h3><p>Soft enough for kids, good enough for toast. <strong>$8</strong></p></div>
+  </div>
+</section>
+
+<section class="preorder" id="preorder" aria-labelledby="pre-h">
+  <div>
+    <h2 class="big" id="pre-h">Skip the line on Saturdays</h2>
+    <p>Weekend loaves sell out by nine. Preorder by Thursday night and your bag will be waiting with your name on it.</p>
+    <a class="btn" href="#">Start a preorder</a>
+  </div>
+  <ol>
+    <li>Pick your bread and pastry online by Thursday at 8 pm.</li>
+    <li>Pay ahead, or pay at pickup.</li>
+    <li>Grab your bag from the pickup shelf any time Saturday morning.</li>
+  </ol>
+</section>
+
+<section class="visit" id="visit" aria-labelledby="visit-h">
+  <h2 class="big" id="visit-h">Find the bakehouse</h2>
+  <dl>
+    <dt>Address</dt><dd>123 Example St<br>Anytown, TX</dd>
+    <dt>Hours</dt><dd>Wed–Sun, 6:30 am until sold out</dd>
+    <dt>Email</dt><dd>hello@example.com</dd>
+  </dl>
+</section>
+</main>
+<footer>Design concept by OtsanLLC. Business, address and menu are fictional.</footer>
+</body>
+</html>
